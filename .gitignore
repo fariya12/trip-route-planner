@@ -55,3 +55,9 @@ GoogleService-Info.plist
 *.aab
 *.ipa
 coverage/
+
+# Local Claude configuration
+/.claude/
+/CLAUDE.md
+/.claude.md
+/.calude.md
