@@ -39,3 +39,19 @@ yarn-error.*
 # generated native folders
 /ios
 /android
+
+# Secrets and local credentials
+.env
+.env.*
+!.env.example
+credentials.json
+service-account*.json
+google-services.json
+GoogleService-Info.plist
+*.keystore
+
+# Build outputs
+*.apk
+*.aab
+*.ipa
+coverage/

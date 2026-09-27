@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "trip-route-planner",
+    "name": "Wayfare",
     "slug": "trip-route-planner",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -10,6 +10,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.fariyam.wayfare",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -20,6 +21,30 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./src/assets/images/logo.png",
+          "imageWidth": 100,
+          "resizeMode": "contain",
+          "backgroundColor": "#F3F5F7"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow Wayfare to use your location to set your pickup or drop-off."
+        }
+      ]
+    ],
+    "extra": {
+      "androidMapsConfigured": false,
+      "eas": {
+        "projectId": "195bc3f9-712b-4828-9079-251147176d12"
+      }
     }
   }
 }
